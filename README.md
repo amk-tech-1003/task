@@ -1,7 +1,8 @@
 # TASK LOGIN SYSTEM FOR USER AND ADMIN.
 # DB
 Project include Database called techtask.<br/>
-And it includes two tables userdb and admindb with 3 columns(id, email, password)
+And it includes two tables userdb and admindb with 3 columns(id, email, password)<br/>
+techtask.sql is the database of project.
 
 # LOGIN PAGE FOR USER
 For loging in use credentials:<br/>
