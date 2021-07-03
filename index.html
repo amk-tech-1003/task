@@ -1,0 +1,44 @@
+<script>  
+  function validates()  
+  {  
+  var x=document.myform.email.value;  
+  var atposition=x.indexOf("@");  
+  var dotposition=x.lastIndexOf(".");  
+  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+    alert("Please enter a valid e-mail address ");  
+    return false;  
+    }  
+  }   
+  </script>  
+  
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="login-box">
+  <form name="myform"  method="post" action="loginuser.php" onsubmit="return validates();">
+
+  <h1>Login</h1>
+
+  <div class="textbox">
+    
+    <i class="fas fa-user"></i>
+    <input type="text" id="username" name="username" placeholder="user's Email">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" id="password" name="password" placeholder="Password"> 
+  </div>
+
+
+  <input type="submit" class="btn" value="Sign in">
+  <p>Login as an Admin <a href="admin.html">click here!</a></p>
+  </form>
+</div>
+  </body>
+</html>
